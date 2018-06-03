@@ -1,0 +1,22 @@
+@mixin fonts($name,$file,$weight,$style){
+  @font-face {
+    font-family: $name;
+    font-style: $style;
+    font-weight: $weight;
+    src: url("../fonts/" + $file + ".ttf"),
+    url("../fonts/" + $file + ".woff"),
+    url("../fonts/" + $file + ".eot");
+  }
+}
+@mixin media($media,$w) {
+  @if $media == hover {
+    @media screen and (min-width:$w+'px'){@content;}
+  }
+  @else {
+    @media screen and (max-width:$w+'px'){@content;}
+  }
+}
+@mixin breakpoints($from,$to){
+  @media screen and (min-width:$from+'px') and (max-width:$to+'px'){@content;}
+}
+

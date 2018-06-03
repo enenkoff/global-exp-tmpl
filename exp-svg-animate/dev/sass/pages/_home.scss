@@ -1,0 +1,28 @@
+body {
+  font-family: Arial;
+  background-color: #000;
+  color: #fff;
+}
+h1 {
+  text-align: center;
+}
+#svg01 {
+  max-width: 600px;
+  margin: 0 auto;
+  stroke: yellow;
+}
+
+#path03 {
+  stroke-dasharray: 31.3;
+  stroke-dashoffset: 31.3;
+  animation: dash 2s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 31.3;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

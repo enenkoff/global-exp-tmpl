@@ -1,0 +1,67 @@
+.clearfix:after {content: ""; display: block; clear: both;}
+.tableBox {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  & > div {
+    display: table;
+    width: 100%;
+    height: 100%;
+    & > div {
+      display: table-cell;
+      vertical-align: middle;
+      height: 100%;
+    }
+  }
+}
+.content {
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: block;
+  @include media(hover,1025){
+    padding: 0 $padding;
+  }
+  @include breakpoints(681,1024){
+    padding: 0 0.65*$padding;
+  }
+  @include media(screen,680){
+    padding: 0 0.4*$padding;
+  }
+  &--lg {
+    max-width: 1920px;
+  }
+  &--md {
+    max-width: 1710px;
+  }
+  &--sm {
+    max-width: 980px;
+  }
+}
+
+.hide {
+  display: none !important;
+}
+.invalid {
+  color: rgba(255,128,124,.5);
+  input, textarea {background-color: rgba(255,128,125,1)}
+  display: flex;
+}
+
+
+.desktop-hidden {
+  @include media(hover,768){
+    display: none !important;
+  }
+}
+.tablet-hidden {
+  @include media(screen,1200){
+    display: none !important;
+  }
+}
+.mobile-hidden {
+  @include media(screen,767){
+    display: none !important;
+  }
+}
