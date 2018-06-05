@@ -6,186 +6,20 @@ body {
 h1 {
   text-align: center;
 }
-#svg01 {
-  max-width: 600px;
-  margin: 0 auto;
-  stroke: yellow;
-  display: none;
-}
+.hide {display: none !important;}
+
 #svg02 {
   max-width: 600px;
   margin: 0 auto;
   stroke: #fff;
   //display: none;
 }
-#svg03 {
-  max-width: 600px;
-  margin: 0 auto;
-  stroke: #fff;
+
+@import "../elements/lines";
+@import "../elements/points";
+
+.hand {
+  animation: hand 2s linear 9.5s alternate forwards;
 }
 
-#path03 {
-  stroke-dasharray: 31.3;
-  stroke-dashoffset: 31.3;
-  animation: dash 2s linear alternate forwards;
-}
-
-@keyframes dash {
-  from {
-    stroke-dashoffset: 31.3;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-#hand01 {
-  stroke-dasharray: 1766;
-  stroke-dashoffset: 1766;
-  animation: dash1 3s linear alternate forwards;
-}
-#hand02 {
-  stroke-dasharray: 4127;
-  stroke-dashoffset: 4127;
-  animation: dash2 3s linear alternate forwards;
-}
-
-//#hand03 {
-//  stroke-dasharray: 4127;
-//  stroke-dashoffset: 4127;
-//  animation: dash3 10s linear alternate forwards;
-//}
-//#hand04 {
-//  stroke-dasharray: 4127;
-//  stroke-dashoffset: 4127;
-//  animation: dash4 10s linear alternate forwards;
-//}
-//#hand05 {
-//  stroke-dasharray: 4127;
-//  stroke-dashoffset: 4127;
-//  animation: dash5 10s linear alternate forwards;
-//}
-
-@keyframes dash1 {
-  from {
-    stroke-dashoffset: 1766;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes dash2 {
-  from {
-    stroke-dashoffset: 4127;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes dash3 {
-  from {
-    stroke-dashoffset: 4127;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes dash4 {
-  from {
-    stroke-dashoffset: 4127;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes dash5 {
-  from {
-    stroke-dashoffset: 4127;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-//=================================================
-//--------------------------          triangle line
-//=================================================
-
-#triangle01 {
-  stroke-dasharray: 164;
-  stroke-dashoffset: 164;
-  animation: triangle01 3s linear alternate forwards;
-}
-#triangle02 {
-  stroke-dasharray: 557;
-  stroke-dashoffset: 557;
-  animation: triangle02 3s linear alternate forwards;
-}
-@keyframes triangle01 {
-  from {  stroke-dashoffset: 164;  }
-  to {  stroke-dashoffset: 0;  }
-}
-@keyframes triangle02 {
-  from {  stroke-dashoffset: 557;  }
-  to {  stroke-dashoffset: 1114;  }
-}
-#triangle11 {
-  stroke-dasharray: 484;
-  stroke-dashoffset: 484;
-  animation: triangle11 3s linear alternate forwards;
-}
-#triangle12 {
-  stroke-dasharray: 256;
-  stroke-dashoffset: 256;
-  animation: triangle12 3s linear alternate forwards;
-}
-@keyframes triangle11 {
-  from {  stroke-dashoffset: 484;  }
-  to {  stroke-dashoffset: 0;  }
-}
-@keyframes triangle12 {
-  from {  stroke-dashoffset: 256;  }
-  to {  stroke-dashoffset: 512;  }
-}
-
-//=================================================
-//--------------------------                circles
-//=================================================
-
-#circle01 {
-  stroke-dasharray: 269;
-  stroke-dashoffset: 269;
-  animation: circle01 3s linear alternate forwards;
-}
-#circle02 {
-  stroke-dasharray: 655;
-  stroke-dashoffset: 655;
-  animation: circle02 3s linear alternate forwards;
-}
-#circle03 {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
-  animation: circle03 3s linear alternate forwards;
-}
-#circle04 {
-  stroke-dasharray: 759;
-  stroke-dashoffset: 759;
-  animation: circle04 3s linear alternate forwards;
-}
-
-@keyframes circle01 {
-  from {  stroke-dashoffset: 269;  }
-  to {  stroke-dashoffset: 0;  }
-}
-@keyframes circle02 {
-  from {  stroke-dashoffset: 655;  }
-  to {  stroke-dashoffset: 1308;  }
-}
-@keyframes circle03 {
-  from {  stroke-dashoffset: 300;  }
-  to {  stroke-dashoffset: 0;  }
-}
-@keyframes circle04 {
-  from {  stroke-dashoffset: 759;  }
-  to {  stroke-dashoffset: 1520;  }
-}
+@keyframes hand { to {  opacity: 0;  } }

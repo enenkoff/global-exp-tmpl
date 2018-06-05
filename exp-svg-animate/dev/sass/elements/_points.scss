@@ -1,0 +1,59 @@
+.points {
+  & > * {
+    opacity: 0;
+  }
+}
+@keyframes point { to {  opacity: 1;  } }
+
+.point34 {  animation: point 0.5s linear 4s alternate forwards;  }
+.point38 {  animation: point 0.5s linear 4.4s alternate forwards;  }
+.point39 {  animation: point 0.5s linear 4.6s alternate forwards;  }
+.point40 {  animation: point 0.5s linear 4.8s alternate forwards;  }
+.point37 {  animation: point 0.5s linear 5s alternate forwards;  }
+.point35 {  animation: point 0.5s linear 5.1s alternate forwards;  }
+.point07 {  animation: point 0.5s linear 5.2s alternate forwards;  }
+.point41 {  animation: point 0.5s linear 5.3s alternate forwards;  }
+.point33 {  animation: point 0.5s linear 5.3s alternate forwards;  }
+.point36 {  animation: point 0.5s linear 5.4s alternate forwards;  }
+.point42 {  animation: point 0.5s linear 5.6s alternate forwards;  }
+.point11 {  animation: point 0.5s linear 5.8s alternate forwards;  }
+.point12 {  animation: point 0.5s linear 6s alternate forwards;  }
+.point09 {  animation: point 0.5s linear 6.3s alternate forwards;  }
+.point08 {  animation: point 0.5s linear 6.1s alternate forwards;  }
+
+
+.point10 {  animation: point 0.5s linear 7.6s alternate forwards;  }
+.point14 {  animation: point 0.5s linear 7.8s alternate forwards;  }
+.point13 {  animation: point 0.5s linear 8s alternate forwards;  }
+.point01 {  animation: point 0.5s linear 9.2s alternate forwards;  }
+
+
+.point15 {  animation: point 0.5s linear 6.7s alternate forwards;  }
+.point16 {  animation: point 0.5s linear 6.9s alternate forwards;  }
+.point17 {  animation: point 0.5s linear 7.1s alternate forwards;  }
+.point22 {  animation: point 0.5s linear 7.2s alternate forwards;  }
+.point21 {  animation: point 0.5s linear 7.3s alternate forwards;  }
+.point23 {  animation: point 0.5s linear 7.5s alternate forwards;  }
+.point30 {  animation: point 0.5s linear 7.7s alternate forwards;  }
+.point31 {  animation: point 0.5s linear 7.8s alternate forwards;  }
+.point29 {  animation: point 0.5s linear 8.1s alternate forwards;  }
+.point28 {  animation: point 0.5s linear 8.3s alternate forwards;  }
+.point44 {  animation: point 0.5s linear 8.5s alternate forwards;  }
+.point43 {  animation: point 0.5s linear 8.6s alternate forwards;  }
+.point03 {  animation: point 0.5s linear 8.65s alternate forwards;  }
+.point02 {  animation: point 0.5s linear 8.7s alternate forwards;  }
+.point05 {  animation: point 0.5s linear 8.75s alternate forwards;  }
+.point04 {  animation: point 0.5s linear 8.8s alternate forwards;  }
+.point06 {  animation: point 0.5s linear 8.9s alternate forwards;  }
+
+
+
+.point32 {  animation: point 0.5s linear 7s alternate forwards;  }
+.point27 {  animation: point 0.5s linear 7.2s alternate forwards;  }
+.point26 {  animation: point 0.5s linear 7.4s alternate forwards;  }
+.point25 {  animation: point 0.5s linear 7.6s alternate forwards;  }
+.point24 {  animation: point 0.5s linear 7.7s alternate forwards;  }
+.point18 {  animation: point 0.5s linear 7.8s alternate forwards;  }
+.point20 {  animation: point 0.5s linear 7.9s alternate forwards;  }
+.point19 {  animation: point 0.5s linear 8s alternate forwards;  }
+

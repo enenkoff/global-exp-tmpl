@@ -1,0 +1,184 @@
+//=================================================
+//--------------------------             hand lines
+//=================================================
+
+#hand01 {
+  stroke-dasharray: 1766;
+  stroke-dashoffset: 1766;
+  animation: dash1 5s linear 2s alternate forwards;
+}
+#hand02 {
+  stroke-dasharray: 4127;
+  stroke-dashoffset: 4127;
+  animation: dash2 5s linear 4.3s alternate forwards;
+}
+
+
+@keyframes dash1 {
+  from {
+    stroke-dashoffset: 1766;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash2 {
+  from {
+    stroke-dashoffset: 4127;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+//=================================================
+//--------------------------            simple line
+//=================================================
+
+#line01 {
+  stroke-dasharray: 58;
+  stroke-dashoffset: 58;
+  animation: line01 5s linear alternate forwards;
+}
+#line02 {
+  stroke-dasharray: 486;
+  stroke-dashoffset: 486;
+  animation: line02 5s linear alternate forwards;
+}
+@keyframes line01 {
+  from {  stroke-dashoffset: 58;  }
+  to {  stroke-dashoffset: 0;  }
+}
+@keyframes line02 {
+  from {  stroke-dashoffset: 486;  }
+  to {  stroke-dashoffset: 972;  }
+}
+
+#line11 {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: line11 5s linear alternate forwards;
+}
+#line12 {
+  stroke-dasharray: 344;
+  stroke-dashoffset: 344;
+  animation: line12 5s linear alternate forwards;
+}
+@keyframes line11 {
+  from {  stroke-dashoffset: 201;  }
+  to {  stroke-dashoffset: 0;  }
+}
+@keyframes line12 {
+  from {  stroke-dashoffset: 344;  }
+  to {  stroke-dashoffset: 688;  }
+}
+
+#line21 {
+  stroke-dasharray: 631;
+  stroke-dashoffset: 631;
+  animation: line21 5s linear alternate forwards;
+}
+#line22 {
+  stroke-dasharray: 678;
+  stroke-dashoffset: 678;
+  animation: line22 5s linear alternate forwards;
+}
+#line23 {
+  stroke-dasharray: 631;
+  stroke-dashoffset: 631;
+  animation: line21 5s linear alternate forwards;
+}
+@keyframes line21 {
+  from {  stroke-dashoffset: 631;  }
+  to {  stroke-dashoffset: 0;  }
+}
+@keyframes line22 {
+  from {  stroke-dashoffset: 678;  }
+  to {  stroke-dashoffset: 1356;  }
+}
+
+
+
+//=================================================
+//--------------------------          triangle line
+//=================================================
+
+#triangle01 {
+  stroke-dasharray: 164;
+  stroke-dashoffset: 164;
+  animation: triangle01 5s linear alternate forwards;
+}
+#triangle02 {
+  stroke-dasharray: 557;
+  stroke-dashoffset: 557;
+  animation: triangle02 5s linear alternate forwards;
+}
+@keyframes triangle01 {
+  from {  stroke-dashoffset: 164;  }
+  to {  stroke-dashoffset: 0;  }
+}
+@keyframes triangle02 {
+  from {  stroke-dashoffset: 557;  }
+  to {  stroke-dashoffset: 1114;  }
+}
+#triangle11 {
+  stroke-dasharray: 484;
+  stroke-dashoffset: 484;
+  animation: triangle11 5s linear alternate forwards;
+}
+#triangle12 {
+  stroke-dasharray: 256;
+  stroke-dashoffset: 256;
+  animation: triangle12 5s linear alternate forwards;
+}
+@keyframes triangle11 {
+  from {  stroke-dashoffset: 484;  }
+  to {  stroke-dashoffset: 0;  }
+}
+@keyframes triangle12 {
+  from {  stroke-dashoffset: 256;  }
+  to {  stroke-dashoffset: 512;  }
+}
+
+//=================================================
+//--------------------------                circles
+//=================================================
+
+#circle01 {
+  stroke-dasharray: 269;
+  stroke-dashoffset: 269;
+  animation: circle01 5s linear alternate forwards;
+}
+#circle02 {
+  stroke-dasharray: 655;
+  stroke-dashoffset: 655;
+  animation: circle02 5s linear alternate forwards;
+}
+#circle03 {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: circle03 5s linear alternate forwards;
+}
+#circle04 {
+  stroke-dasharray: 759;
+  stroke-dashoffset: 759;
+  animation: circle04 5s linear alternate forwards;
+}
+
+@keyframes circle01 {
+  from {  stroke-dashoffset: 269;  }
+  to {  stroke-dashoffset: 0;  }
+}
+@keyframes circle02 {
+  from {  stroke-dashoffset: 655;  }
+  to {  stroke-dashoffset: 1308;  }
+}
+@keyframes circle03 {
+  from {  stroke-dashoffset: 300;  }
+  to {  stroke-dashoffset: 0;  }
+}
+@keyframes circle04 {
+  from {  stroke-dashoffset: 759;  }
+  to {  stroke-dashoffset: 1520;  }
+}
