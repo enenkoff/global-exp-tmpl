@@ -1,59 +1,112 @@
 .points {
   & > * {
     opacity: 0;
+    animation: radius 2s linear 11.5s alternate forwards;
   }
 }
 @keyframes point { to {  opacity: 1;  } }
 
-.point34 {  animation: point 0.5s linear 4s alternate forwards;  }
-.point38 {  animation: point 0.5s linear 4.4s alternate forwards;  }
-.point39 {  animation: point 0.5s linear 4.6s alternate forwards;  }
-.point40 {  animation: point 0.5s linear 4.8s alternate forwards;  }
-.point37 {  animation: point 0.5s linear 5s alternate forwards;  }
-.point35 {  animation: point 0.5s linear 5.1s alternate forwards;  }
-.point07 {  animation: point 0.5s linear 5.2s alternate forwards;  }
-.point41 {  animation: point 0.5s linear 5.3s alternate forwards;  }
-.point33 {  animation: point 0.5s linear 5.3s alternate forwards;  }
-.point36 {  animation: point 0.5s linear 5.4s alternate forwards;  }
-.point42 {  animation: point 0.5s linear 5.6s alternate forwards;  }
-.point11 {  animation: point 0.5s linear 5.8s alternate forwards;  }
-.point12 {  animation: point 0.5s linear 6s alternate forwards;  }
-.point09 {  animation: point 0.5s linear 6.3s alternate forwards;  }
-.point08 {  animation: point 0.5s linear 6.1s alternate forwards;  }
+
+.point34 {  animation: point 0.5s linear 4s alternate forwards, move34 3s linear 11.5s alternate forwards;  }
+.point38 {  animation: point 0.5s linear 4.4s alternate forwards, move38 3s linear 11.5s alternate forwards;  }
+.point39 {  animation: point 0.5s linear 4.6s alternate forwards, move39 3s linear 11.5s alternate forwards;  }
+.point40 {  animation: point 0.5s linear 4.8s alternate forwards, move40 3s linear 11.5s alternate forwards;  }
+.point37 {  animation: point 0.5s linear 5s alternate forwards, move37 3s linear 11.5s alternate forwards;  }
+.point35 {  animation: point 0.5s linear 5.1s alternate forwards, move35 3s linear 11.5s alternate forwards;  }
+.point07 {  animation: point 0.5s linear 5.2s alternate forwards, move07 3s linear 11.5s alternate forwards;  }
+.point41 {  animation: point 0.5s linear 5.3s alternate forwards, move41 3s linear 11.5s alternate forwards;  }
+.point33 {  animation: point 0.5s linear 5.3s alternate forwards, move33 3s linear 11.5s alternate forwards;  }
+.point36 {  animation: point 0.5s linear 5.4s alternate forwards, move36 3s linear 11.5s alternate forwards;  }
+.point42 {  animation: point 0.5s linear 5.6s alternate forwards, move42 3s linear 11.5s alternate forwards;  }
+.point11 {  animation: point 0.5s linear 5.8s alternate forwards, move11 3s linear 11.5s alternate forwards;  }
+.point12 {  animation: point 0.5s linear 6s alternate forwards, move12 3s linear 11.5s alternate forwards;  }
+.point09 {  animation: point 0.5s linear 6.3s alternate forwards, move09 3s linear 11.5s alternate forwards;  }
+.point08 {  animation: point 0.5s linear 6.1s alternate forwards, move08 3s linear 11.5s alternate forwards;  }
 
 
-.point10 {  animation: point 0.5s linear 7.6s alternate forwards;  }
-.point14 {  animation: point 0.5s linear 7.8s alternate forwards;  }
-.point13 {  animation: point 0.5s linear 8s alternate forwards;  }
-.point01 {  animation: point 0.5s linear 9.2s alternate forwards;  }
+.point10 {  animation: point 0.5s linear 7.6s alternate forwards, move10 3s linear 11.5s alternate forwards;  }
+.point14 {  animation: point 0.5s linear 7.8s alternate forwards, move14 3s linear 11.5s alternate forwards;  }
+.point13 {  animation: point 0.5s linear 8s alternate forwards, move13 3s linear 11.5s alternate forwards;  }
+.point01 {  animation: point 0.5s linear 9.2s alternate forwards, move01 3s linear 11.5s alternate forwards;  }
 
 
-.point15 {  animation: point 0.5s linear 6.7s alternate forwards;  }
-.point16 {  animation: point 0.5s linear 6.9s alternate forwards;  }
-.point17 {  animation: point 0.5s linear 7.1s alternate forwards;  }
-.point22 {  animation: point 0.5s linear 7.2s alternate forwards;  }
-.point21 {  animation: point 0.5s linear 7.3s alternate forwards;  }
-.point23 {  animation: point 0.5s linear 7.5s alternate forwards;  }
-.point30 {  animation: point 0.5s linear 7.7s alternate forwards;  }
-.point31 {  animation: point 0.5s linear 7.8s alternate forwards;  }
-.point29 {  animation: point 0.5s linear 8.1s alternate forwards;  }
-.point28 {  animation: point 0.5s linear 8.3s alternate forwards;  }
-.point44 {  animation: point 0.5s linear 8.5s alternate forwards;  }
-.point43 {  animation: point 0.5s linear 8.6s alternate forwards;  }
-.point03 {  animation: point 0.5s linear 8.65s alternate forwards;  }
-.point02 {  animation: point 0.5s linear 8.7s alternate forwards;  }
-.point05 {  animation: point 0.5s linear 8.75s alternate forwards;  }
-.point04 {  animation: point 0.5s linear 8.8s alternate forwards;  }
-.point06 {  animation: point 0.5s linear 8.9s alternate forwards;  }
+.point15 {  animation: point 0.5s linear 6.7s alternate forwards, move15 3s linear 11.5s alternate forwards;  }
+.point16 {  animation: point 0.5s linear 6.9s alternate forwards, move16 3s linear 11.5s alternate forwards;  }
+.point17 {  animation: point 0.5s linear 7.1s alternate forwards, move17 3s linear 11.5s alternate forwards;  }
+.point22 {  animation: point 0.5s linear 7.2s alternate forwards, move22 3s linear 11.5s alternate forwards;  }
+.point21 {  animation: point 0.5s linear 7.3s alternate forwards, move21 3s linear 11.5s alternate forwards;  }
+.point23 {  animation: point 0.5s linear 7.5s alternate forwards, move23 3s linear 11.5s alternate forwards;  }
+.point30 {  animation: point 0.5s linear 7.7s alternate forwards, move30 3s linear 11.5s alternate forwards;  }
+.point31 {  animation: point 0.5s linear 7.8s alternate forwards, move31 3s linear 11.5s alternate forwards;  }
+.point29 {  animation: point 0.5s linear 8.1s alternate forwards, move29 3s linear 11.5s alternate forwards;  }
+.point28 {  animation: point 0.5s linear 8.3s alternate forwards, move28 3s linear 11.5s alternate forwards;  }
+.point44 {  animation: point 0.5s linear 8.5s alternate forwards, move44 3s linear 11.5s alternate forwards;  }
+.point43 {  animation: point 0.5s linear 8.6s alternate forwards, move43 3s linear 11.5s alternate forwards;  }
+.point03 {  animation: point 0.5s linear 8.65s alternate forwards, move03 3s linear 11.5s alternate forwards;  }
+.point02 {  animation: point 0.5s linear 8.7s alternate forwards, move02 3s linear 11.5s alternate forwards;  }
+.point05 {  animation: point 0.5s linear 8.75s alternate forwards, move05 3s linear 11.5s alternate forwards;  }
+.point04 {  animation: point 0.5s linear 8.8s alternate forwards, move04 3s linear 11.5s alternate forwards;  }
+.point06 {  animation: point 0.5s linear 8.9s alternate forwards, move06 3s linear 11.5s alternate forwards;  }
 
 
 
-.point32 {  animation: point 0.5s linear 7s alternate forwards;  }
-.point27 {  animation: point 0.5s linear 7.2s alternate forwards;  }
-.point26 {  animation: point 0.5s linear 7.4s alternate forwards;  }
-.point25 {  animation: point 0.5s linear 7.6s alternate forwards;  }
-.point24 {  animation: point 0.5s linear 7.7s alternate forwards;  }
-.point18 {  animation: point 0.5s linear 7.8s alternate forwards;  }
-.point20 {  animation: point 0.5s linear 7.9s alternate forwards;  }
-.point19 {  animation: point 0.5s linear 8s alternate forwards;  }
+.point32 {  animation: point 0.5s linear 7s alternate forwards, move32 3s linear 11.5s alternate forwards;  }
+.point27 {  animation: point 0.5s linear 7.2s alternate forwards, move27 3s linear 11.5s alternate forwards;  }
+.point26 {  animation: point 0.5s linear 7.4s alternate forwards, move26 3s linear 11.5s alternate forwards;  }
+.point25 {  animation: point 0.5s linear 7.6s alternate forwards, move25 3s linear 11.5s alternate forwards;  }
+.point24 {  animation: point 0.5s linear 7.7s alternate forwards, move24 3s linear 11.5s alternate forwards;  }
+.point18 {  animation: point 0.5s linear 7.8s alternate forwards, move18 3s linear 11.5s alternate forwards;  }
+.point20 {  animation: point 0.5s linear 7.9s alternate forwards, move20 3s linear 11.5s alternate forwards;  }
+.point19 {  animation: point 0.5s linear 8s alternate forwards, move19 3s linear 11.5s alternate forwards;  }
+
+
+@keyframes move34 { to { r: 1.65; cx: 421.4; cy: 669.89; } } // to 167
+@keyframes move33 { to { r: 1.65; cx: 304.99; cy: 678.3; } } // to 23
+@keyframes move32 { to { r: 1.65; cx: 330.37; cy: 550.77; } } // to 161
+@keyframes move27 { to { r: 1.65; cx: 325.72; cy: 475.37; } } // to 28
+@keyframes move26 { to { r: 1.65; cx: 156.12; cy: 621.37; } } // to 115
+@keyframes move25 { to { r: 1.65; cx: 190.24; cy: 559.84; } } // to 119
+@keyframes move24 { to { r: 1.65; cx: 245.23; cy: 513.4; } } // to 108
+@keyframes move18 { to { r: 1.65; cx: 299.63; cy: 446.62; } } // to 121
+@keyframes move20 { to { r: 1.65; cx: 331.03; cy: 402.84; } } // to 103
+@keyframes move19 { to { r: 1.65; cx: 541.98; cy: 218.85; } } // to 35
+@keyframes move15 { to { r: 1.65; cx: 58.6; cy: 215.5; } } // to 61
+@keyframes move16 { to { r: 1.65; cx: 140.27; cy: 235.45; } } // to 62
+@keyframes move17 { to { r: 1.65; cx: 380.73; cy: 342.58; } } // to 151
+@keyframes move22 { to { r: 1.65; cx: 399.13; cy: 246.72; } } // to 145
+@keyframes move35 { to { r: 1.65; cx: 479.92; cy: 649.62; } } // to 8
+@keyframes move38 { to { r: 1.65; cx: 527.74; cy: 620.61; } } // to 7
+@keyframes move39 { to { r: 1.65; cx: 440.48; cy: 596.32; } } // to 11
+@keyframes move40 { to { r: 1.65; cx: 425.78; cy: 484.88; } } // to 155
+@keyframes move37 { to { r: 1.65; cx: 379.82; cy: 473.72; } } // to 125
+@keyframes move23 { to { r: 1.65; cx: 199.38; cy: 611.43; } } // to 114
+@keyframes move21 { to { r: 1.65; cx: 248.77; cy: 465.2; } } // to 105
+@keyframes move30 { to { r: 1.65; cx: 282.38; cy: 382.2; } } // to 35
+@keyframes move31 { to { r: 1.65; cx: 288.17; cy: 274; } } // to 81
+@keyframes move28 { to { r: 1.65; cx: 236.09; cy: 214.15; } } // to 53
+@keyframes move29 { to { r: 1.65; cx: 126.25; cy: 145.3; } } // to 74
+@keyframes move42 { to { r: 1.65; cx: 586.65; cy: 236.24; } } // to 134
+@keyframes move36 { to { r: 1.65; cx: 466.58; cy: 218.57; } } // to 139
+@keyframes move07 { to { r: 1.65; cx: 362.58; cy: 306.43; } } // to 146
+@keyframes move41 { to { r: 1.65; cx: 420.81; cy: 190.71; } } // to 86
+@keyframes move02 { to { r: 1.65; cx: 94.79; cy: 151.79; } } // to 72
+@keyframes move11 { to { r: 1.65; cx: 597.23; cy: 122.42; } } // to 93
+@keyframes move12 { to { r: 1.65; cx: 573.6; cy: 157.39; } } // to 91
+@keyframes move08 { to { r: 1.65; cx: 526.12; cy: 154.68; } } // to 96
+@keyframes move09 { to { r: 1.65; cx: 464.59; cy: 179.94; } } // to 97
+@keyframes move14 { to { r: 1.65; cx: 365.3; cy: 202.18; } } // to 41
+@keyframes move13 { to { r: 1.65; cx: 336.67; cy: 119.8; } } // to 42
+@keyframes move01 { to { r: 1.65; cx: 342.29; cy: 251.96; } } // to 83
+@keyframes move06 { to { r: 1.65; cx: 312.75; cy: 133.36; } } // to 44
+@keyframes move03 { to { r: 1.65; cx: 107.75; cy: 211.49; } } // to 76
+@keyframes move04 { to { r: 1.65; cx: 316.32; cy: 196.4; } } // to 47
+@keyframes move05 { to { r: 1.65; cx: 296.97; cy: 203.09; } } // to 48
+@keyframes move44 { to { r: 1.65; cx: 295.87; cy: 311.29; } } // to 99
+@keyframes move43 { to { r: 1.65; cx: 202.66; cy: 172.51; } } // to 56
+
+
+
+
+
+@keyframes move10 { to { opacity: 0 } }
 

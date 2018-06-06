@@ -6,10 +6,9 @@ body {
 h1 {
   text-align: center;
 }
-.hide {display: none !important;}
 
 #svg02 {
-  max-width: 600px;
+  max-width: 680px;
   margin: 0 auto;
   stroke: #fff;
   //display: none;
@@ -17,6 +16,7 @@ h1 {
 
 @import "../elements/lines";
 @import "../elements/points";
+@import "../elements/rads";
 
 .hand {
   animation: hand 2s linear 9.5s alternate forwards;

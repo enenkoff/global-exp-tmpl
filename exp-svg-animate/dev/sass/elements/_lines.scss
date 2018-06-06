@@ -1,4 +1,24 @@
 //=================================================
+//--------------------------             body lines
+//=================================================
+
+#body01 {
+  stroke-dasharray: 8934;
+  stroke-dashoffset: 8934;
+  animation: body1 15s linear 14s alternate forwards;
+}
+
+@keyframes body1 {
+  from {
+    stroke-dashoffset: 8934;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+// =================================================
 //--------------------------             hand lines
 //=================================================
 
@@ -36,15 +56,22 @@
 //--------------------------            simple line
 //=================================================
 
+@keyframes line_show {
+  to {  opacity: 1  }
+}
+@keyframes line_hide {
+  to {  opacity: 0  }
+}
+
 #line01 {
   stroke-dasharray: 58;
   stroke-dashoffset: 58;
-  animation: line01 5s linear alternate forwards;
+  animation: line01 5s linear alternate forwards, line_hide 2s linear 5s alternate forwards;
 }
 #line02 {
   stroke-dasharray: 486;
   stroke-dashoffset: 486;
-  animation: line02 5s linear alternate forwards;
+  animation: line02 5s linear alternate forwards, line_hide 2s linear 5s alternate forwards;
 }
 @keyframes line01 {
   from {  stroke-dashoffset: 58;  }
@@ -58,12 +85,12 @@
 #line11 {
   stroke-dasharray: 200;
   stroke-dashoffset: 200;
-  animation: line11 5s linear alternate forwards;
+  animation: line11 5s linear alternate forwards, line_hide 2s linear 5s alternate forwards;
 }
 #line12 {
   stroke-dasharray: 344;
   stroke-dashoffset: 344;
-  animation: line12 5s linear alternate forwards;
+  animation: line12 5s linear alternate forwards, line_hide 2s linear 5s alternate forwards;
 }
 @keyframes line11 {
   from {  stroke-dashoffset: 201;  }
@@ -77,17 +104,17 @@
 #line21 {
   stroke-dasharray: 631;
   stroke-dashoffset: 631;
-  animation: line21 5s linear alternate forwards;
+  animation: line21 5s linear alternate forwards, line_hide 2s linear 5s alternate forwards;
 }
 #line22 {
   stroke-dasharray: 678;
   stroke-dashoffset: 678;
-  animation: line22 5s linear alternate forwards;
+  animation: line22 5s linear alternate forwards, line_hide 5s linear 15s alternate forwards;
 }
 #line23 {
   stroke-dasharray: 631;
   stroke-dashoffset: 631;
-  animation: line21 5s linear alternate forwards;
+  animation: line21 5s linear alternate forwards, line_hide 2s linear 5s alternate forwards;
 }
 @keyframes line21 {
   from {  stroke-dashoffset: 631;  }
@@ -98,21 +125,38 @@
   to {  stroke-dashoffset: 1356;  }
 }
 
+#rectangle01 {
+  transform: translate3d(0,0,0);
+  will-change: transform;
+  transform-origin: left bottom;
+  opacity: 0;
+  animation: line_show 2s linear 5s alternate forwards, rectangle_def 5s linear 12s alternate forwards;
+}
+
+@keyframes rectangle_def {
+  to {
+    transform: scaleY(0.8887) scaleX(1.0303) translateX(-1%);
+  }
+}
+
 
 
 //=================================================
 //--------------------------          triangle line
 //=================================================
 
+@keyframes triangle_hide {
+  to {  opacity: 0  }
+}
 #triangle01 {
   stroke-dasharray: 164;
   stroke-dashoffset: 164;
-  animation: triangle01 5s linear alternate forwards;
+  animation: triangle01 5s linear alternate forwards, triangle_hide 5s linear 12s alternate forwards;
 }
 #triangle02 {
   stroke-dasharray: 557;
   stroke-dashoffset: 557;
-  animation: triangle02 5s linear alternate forwards;
+  animation: triangle02 5s linear alternate forwards, triangle_hide 5s linear 12s alternate forwards;
 }
 @keyframes triangle01 {
   from {  stroke-dashoffset: 164;  }
@@ -125,12 +169,12 @@
 #triangle11 {
   stroke-dasharray: 484;
   stroke-dashoffset: 484;
-  animation: triangle11 5s linear alternate forwards;
+  animation: triangle11 5s linear alternate forwards, triangle_hide 5s linear 12s alternate forwards;
 }
 #triangle12 {
   stroke-dasharray: 256;
   stroke-dashoffset: 256;
-  animation: triangle12 5s linear alternate forwards;
+  animation: triangle12 5s linear alternate forwards, triangle_hide 5s linear 12s alternate forwards;
 }
 @keyframes triangle11 {
   from {  stroke-dashoffset: 484;  }
@@ -148,22 +192,22 @@
 #circle01 {
   stroke-dasharray: 269;
   stroke-dashoffset: 269;
-  animation: circle01 5s linear alternate forwards;
+  animation: circle01 5s linear alternate forwards, circle_hide 2s linear 5s alternate forwards;
 }
 #circle02 {
   stroke-dasharray: 655;
   stroke-dashoffset: 655;
-  animation: circle02 5s linear alternate forwards;
+  animation: circle02 5s linear alternate forwards, circle_hide 2s linear 5s alternate forwards;
 }
 #circle03 {
   stroke-dasharray: 300;
   stroke-dashoffset: 300;
-  animation: circle03 5s linear alternate forwards;
+  animation: circle03 5s linear alternate forwards, circle_hide 2s linear 5s alternate forwards;
 }
 #circle04 {
   stroke-dasharray: 759;
   stroke-dashoffset: 759;
-  animation: circle04 5s linear alternate forwards;
+  animation: circle04 5s linear alternate forwards, circle_hide 2s linear 5s alternate forwards;
 }
 
 @keyframes circle01 {
@@ -181,4 +225,19 @@
 @keyframes circle04 {
   from {  stroke-dashoffset: 759;  }
   to {  stroke-dashoffset: 1520;  }
+}
+@keyframes circle_hide {
+  to {  opacity: 0  }
+}
+@keyframes circle_show {
+  to {  opacity: 1  }
+}
+
+#circle_full {
+  opacity: 0;
+  animation: circle_show 2s linear 5s alternate forwards, circle_full 5s linear 12s alternate forwards;
+}
+
+@keyframes circle_full {
+  to {  cx: 338.99; cy: 341.25; r: 338.74; }
 }
