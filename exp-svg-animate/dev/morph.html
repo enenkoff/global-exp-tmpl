@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>morph</title>
+    <style>
+        body,html {
+            height: 100%;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-family: Copperplate, "Copperplate Gothic", fantasy;
+            font-size: 250px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 600;
+            line-height: 26.4px;
+        }
+        #logo {
+            display: none;
+        }
+        .main {
+            padding: 30px 100px;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        .mains {
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <svg id="logo" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="500px" height="500px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 5000 5000"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+    #black {fill:black}
+    #orange {fill:none;fill-opacity:0.2}
+    #blue {fill:none;fill-opacity:0.2}
+    #green {fill:none;fill-opacity:0.2}
+    #red {fill:none;fill-opacity:0.2}
+    #purple {fill:none;fill-opacity:0.2}
+  </style>
+ </defs>
+   <path id="purple" d="M2201 2312c-62,-88 -14,-202 92,-246 263,-69 484,-13 661,169l162 -200c-41,-51 -151,-137 -150,-137 63,-231 -11,-421 -106,-500 26,127 7,312 -89,404 16,-11 -343,-82 -528,-2 -102,-87 -96,-277 -85,-393 -106,68 -167,257 -101,493 -290,255 -173,729 282,750 62,-6 214,-2 359,-49 107,-34 344,136 96,285 -207,100 -457,-2 -692,-146 -552,-340 -682,980 952,676 1,34 -3,47 -30,83 254,-41 519,-257 651,-509 -49,45 -296,274 -628,281 39,15 28,74 22,76 -1143,152 -1204,-462 -1118,-385 89,81 178,143 271,181 388,140 743,43 891,-211 123,-212 9,-503 -192,-592 -87,-39 -200,-21 -357,11 -164,46 -289,39 -363,-39z"/>
+  <path id="black" d="M2201 2312c-62,-88 -14,-202 92,-246 263,-69 484,-13 661,169l162 -200c-41,-51 -151,-137 -150,-137 63,-231 -11,-421 -106,-500 26,127 7,312 -89,404 16,-11 -343,-82 -528,-2 -102,-87 -96,-277 -85,-393 -106,68 -167,257 -101,493 -290,255 -173,729 282,750 62,-6 214,-2 359,-49 107,-34 344,136 96,285 -207,100 -479,41 -692,-146 -540,-476 -996,1083 637,779 1,34 -2,47 -29,83 230,-40 530,-205 705,-429 -56,36 -340,216 -682,201 38,15 28,74 21,76 -1143,152 -1072,-692 -803,-488 96,73 178,143 271,181 388,140 743,43 891,-211 123,-212 9,-503 -192,-592 -87,-39 -200,-21 -357,11 -164,46 -289,39 -363,-39z"/>
+  <path id="red" d="M2201 2312c-62,-88 -14,-202 92,-246 263,-69 484,-13 661,169l162 -200c-41,-51 -151,-137 -150,-137 63,-231 -11,-421 -106,-500 26,127 7,312 -89,404 16,-11 -343,-82 -528,-2 -102,-87 -96,-277 -85,-393 -106,68 -167,257 -101,493 -290,255 -173,729 282,750 62,-6 214,-2 359,-49 107,-34 344,136 96,285 -207,100 -538,-13 -692,-146 -172,-150 -1252,-180 -411,1032 -31,15 -45,17 -88,7 152,186 285,338 527,521 -60,-95 -185,-273 -309,-592 1,41 -57,55 -61,50 -602,-983 90,-888 191,-796 89,82 178,143 271,181 388,140 743,43 891,-211 123,-212 9,-503 -192,-592 -87,-39 -200,-21 -357,11 -164,46 -289,39 -363,-39z"/>
+  <path id="green" d="M2201 2312c-62,-88 -14,-202 92,-246 263,-69 484,-13 661,169l162 -200c-41,-51 -151,-137 -150,-137 63,-231 -11,-421 -106,-500 26,127 7,312 -89,404 16,-11 -343,-82 -528,-2 -102,-87 -96,-277 -85,-393 -106,68 -167,257 -101,493 -290,255 -173,729 282,750 62,-6 214,-2 359,-49 107,-34 344,136 96,285 -207,100 -504,14 -692,-146 -362,-310 -1294,423 -1367,464 -23,-26 -28,-38 -29,-83 -138,160 -236,255 -376,439 99,-53 434,-249 481,-234 -39,-13 -40,-40 -46,-58 683,-345 1017,-438 1186,-306 100,79 178,143 271,181 388,140 743,43 891,-211 123,-212 9,-503 -192,-592 -87,-39 -200,-21 -357,11 -164,46 -289,39 -363,-39z"/>
+  <path id="blue" d="M2201 2312c-62,-88 -14,-202 92,-246 263,-69 484,-13 661,169l162 -200c-41,-51 -151,-137 -150,-137 63,-231 -11,-421 -106,-500 26,127 7,312 -89,404 16,-11 -343,-82 -528,-2 -102,-87 -96,-277 -85,-393 -106,68 -167,257 -101,493 -290,255 -173,729 282,750 62,-6 214,-2 359,-49 107,-34 344,136 96,285 -207,100 -548,6 -744,-46 -750,-200 -892,-353 -1242,-576 2,-19 7,-54 34,-81 -143,-75 -252,-193 -422,-399 31,188 218,521 350,641 5,-45 11,-77 19,-93 391,318 511,448 1116,703 118,50 210,80 317,108 378,137 743,43 891,-211 123,-212 9,-503 -192,-592 -87,-39 -200,-21 -357,11 -164,46 -289,39 -363,-39z"/>
+  <path id="orange" d="M2201 2312c-62,-88 -14,-202 92,-246 263,-69 484,-13 661,169l162 -200c-41,-51 -151,-137 -150,-137 63,-231 -11,-421 -106,-500 26,127 7,312 -89,404 16,-11 -343,-82 -528,-2 -102,-87 -96,-277 -85,-393 -106,68 -167,257 -101,493 -290,255 -173,729 282,750 62,-6 214,-2 359,-49 107,-34 344,136 96,285 -207,100 -558,-30 -692,-146 -262,-230 -370,-748 -343,-1290 36,7 41,16 81,39 -38,-241 3,-411 60,-675 -165,281 -211,413 -263,661 30,-16 43,-25 62,-25 -33,393 -69,1150 252,1512 70,80 209,164 271,181 388,140 743,43 891,-211 123,-212 9,-503 -192,-592 -87,-39 -200,-21 -357,11 -164,46 -289,39 -363,-39z"/>
+</svg>
+    </div>
+
+    <div class="mains">
+        <style type="text/css">
+            .ee {
+                height: 350px;
+                width: 500px;
+            }
+            .black {fill:none;}
+            .orange {fill:none;}
+            .orange2 {display: none;}
+            .blue2 {display: none;}
+            .blue {fill:black;}
+            .green {fill:black;}
+        </style>
+        <svg class="ee" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.1 8.9" enable-background="new 0 0 6.1 8.9">
+            <path class="black" d="M0,0h3.4l0.3,1.6H1.8v2.1h1.4v1.5H1.8v1.9h1.8L3.3,8.7H0V0z"></path>
+            <path class="orange" d="m4.2 0h1.9l-.4 6.4h-1.1z"></path>
+            <path class="orange2" d="m4.2 0h1.9l-.4 6.4h-1.1z"></path>
+            <path class="blue" d="m2.2 4.9c0 .3.1.5.3.7.2.2.4.3.7.3.3 0 .5-.1.7-.3.1-.2.2-.4.2-.7 0-.3-.1-.5-.3-.7s-.4-.2-.7-.2c-.2 0-.4.1-.6.3s-.3.4-.3.6"></path>
+            <path class="blue2" d="m4.2 7.9c0 .3.1.5.3.7.2.2.4.3.7.3.3 0 .5-.1.7-.3.1-.2.2-.4.2-.7 0-.3-.1-.5-.3-.7s-.4-.2-.7-.2c-.2 0-.4.1-.6.3s-.3.4-.3.6"></path>
+            <!--<path class="green" d="m4.2 7.9c0 .3.1.5.3.7.2.2.4.3.7.3.3 0 .5-.1.7-.3.1-.2.2-.4.2-.7 0-.3-.1-.5-.3-.7s-.4-.2-.7-.2c-.2 0-.4.1-.6.3s-.3.4-.3.6"></path>-->
+        </svg>
+    </div>
+
+
+<script src="js/MorphSVGPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
+    <script>
+        var tl = new TimelineMax({repeat:1, yoyo:true});
+
+        tl.to("#black", .2, {morphSVG: "#purple"})
+            .to("#black", .1, {morphSVG: "#red"})
+            .to("#black", .05, {morphSVG: "#green"})
+            .to("#black", .05, {morphSVG: "#blue"})
+            .to("#black", .2, {morphSVG: "#orange"});
+
+        // $("#logo").click(function(){
+        //     if(!tl.isActive()){
+        //         tl.play(!tl.play())
+        //     }
+        // });
+        //
+        // $("#logo").click(function(){
+        //     var tween = new TimelineLite,
+        //         mySplitText = new SplitText(".name", {type:"words,chars"}),
+        //         chars = mySplitText.chars;
+        //     TweenLite.set(".name");
+        //     tween.staggerTo(chars, .5, {rotationY:180, transformOrigin:"50% 50%", ease:Back.easeInOut, delay:.95, yoyo:true}, .1);
+        // })
+
+
+        var t2 = new TimelineMax({yoyo:false});
+
+        t2.fromTo(".blue", 1, {scaleY:2, scaleX:2}, {
+            scaleY: 1,
+            scaleX: 1
+        }).to(".blue", 1, {
+            morphSVG: ".blue2",
+            onComplete: function () {
+                $('.blue2').show();
+            }
+        }).to(".blue", 1, {
+            morphSVG: ".orange",
+            onComplete: function () {
+                $('.orange2').show();
+            }
+        })
+        .to(".blue", 1, {morphSVG: ".black"})
+            // .to("#black", .05, {morphSVG: "#green"})
+            // .to("#black", .05, {morphSVG: "#blue"})
+            // .to("#black", .2, {morphSVG: "#orange"});
+
+    </script>
+
+</body>
+
+</html>

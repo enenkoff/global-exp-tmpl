@@ -130,7 +130,7 @@
   will-change: transform;
   transform-origin: left bottom;
   opacity: 0;
-  animation: line_show 2s linear 5s alternate forwards, rectangle_def 5s linear 12s alternate forwards;
+  animation: line_show 2s linear 5s alternate forwards, rectangle_def 10s linear 12s alternate forwards;
 }
 
 @keyframes rectangle_def {
